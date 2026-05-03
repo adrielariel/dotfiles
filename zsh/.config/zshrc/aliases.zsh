@@ -1,0 +1,40 @@
+# General
+alias c="clear"
+alias nf="fastfetch"
+alias pf="fastfetch"
+alias ff="fastfetch"
+alias ls="eza -a --icons=always"
+alias ll="eza -al --icons=always"
+alias lt="eza -a --tree --level=1 --icons=always"
+alias v="nvim"
+alias shutdown="systemctl poweroff"
+alias wifi="nmtui"
+alias :q="exit"
+alias o="xdg-open"
+
+# Git
+alias gs="git status"
+alias ga="git add"
+alias gm="git commit -m"
+alias gf="git fetch"
+alias gpr="git pull --rebase"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gst="git stash"
+alias gstl="git stash list"
+alias gstp="git stash push -m"
+alias gsta="git stash apply"
+alias gstd="git stash drop"
+alias gstpop="git stash pop"
+alias lg="lazygit"
+
+# Tmux
+alias tl="tmux ls"
+alias ta="tmux attach-session -t"
+alias tk="tmux kill-session -t"
+
+# Docker
+alias dcu="docker compose up -d"
+alias dcd="docker compose down"
+alias dcdu="docker compose -f docker-compose.dev.yaml up -d"
+alias dcdd="docker compose -f docker-compose.dev.yaml down"
