@@ -1,0 +1,14 @@
+[user]
+    name = Adriel
+    email = adriellim98+dev-github@outlook.com
+
+[init]
+    defaultBranch = main
+
+[core]
+    excludesfile = ~/.gitignore_global
+
+[pull]
+    rebase = true
+
+[push]
