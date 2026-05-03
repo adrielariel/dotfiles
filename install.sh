@@ -34,4 +34,12 @@ for folder in $(echo "$STOW_FOLDERS" | tr "," "\n"); do
     fi
 done
 
+# Post-stow hooks
+if echo "$STOW_FOLDERS" | tr "," "\n" | grep -qx "hyprland"; then
+    if pgrep -x Hyprland >/dev/null 2>&1; then
+        echo "  ⟳ Reloading Hyprland in 1s..."
+        (sleep 1 && hyprctl reload) &
+    fi
+fi
+
 echo "Done!"
